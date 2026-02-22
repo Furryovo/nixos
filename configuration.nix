@@ -121,16 +121,16 @@
         dedicatedServer.openFirewall = true;
       };
 
-       programs.git = {
-        enable = true;
-        settings = {
-          user = {
-          name  = "Furryovo";
-          email = "krantzextra@proton.me";
-        };
-        init.defaultBranch = "master";
-      };
-    };
+    #   programs.git = {
+    #    enable = true;
+    #    settings = {
+    #      user = {
+    #      name  = "Furryovo";
+    #      email = "krantzextra@proton.me";
+    #    };
+    #    init.defaultBranch = "master";
+    #  };
+    #};
 
           nixpkgs.config.allowUnfreePredicate = pkg: builtins.elem  [
              "steam"
@@ -145,11 +145,12 @@
        };
      };
 
-        users.users.dragonfurryowo = {
-          isNormalUser = true;
-          description = "DragonfurryOwO";
-          extraGroups = [ "networkmanager" "wheel" ];
-        };
+
+  users.users.dragonfurryowo = {
+    isNormalUser = true;
+    description = "DragonFurryOwO";
+    extraGroups = [ "networkmanager" "wheel" ];
+  };
 
        fonts.packages = with pkgs; [
        pkgs.nerdfetch
@@ -182,7 +183,6 @@
   #        freetype
   #  ];
   #};
-
 
     programs.fish.enable = true;
     fonts.fontconfig.enable = true;
@@ -264,7 +264,10 @@
     pkgs.thunar
     pkgs.rPackages.edge
     pkgs.neovim
-    #pkgs.spicetify-nix
+    spicetify-nix
+    nur.repos.gepbird.mint-mod-manager
+    pkgs.git
+
 
   ];
 }
