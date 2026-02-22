@@ -26,15 +26,26 @@
       ref = "main";
       flake = false;
     };
-   };
+
+      NUR = {
+      type = "github";
+      owner = "nix-community";
+      repo = "NUR";
+      ref = "main";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+};
 
 
-  outputs = { self, nixpkgs, sddm-greenleaf, spicetify-nix }: {
+  outputs = { self, nixpkgs, sddm-greenleaf, spicetify-nix, NUR }: {
     nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
       modules = [
         { nix.settings.experimental-features = [ "nix-command" "flakes" ]; }
-        ./configuration.nix
+            NUR.modules.nixos.default
+            spicetify-nix.modules.nixos.default
+            sddm-greenleaf.modules.nixos.default        
+          ./configuration.nix
       ];
     };
   };
