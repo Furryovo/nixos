@@ -27,6 +27,7 @@
       flake = false;
     };
 
+      # https://github.com/nix-community/NUR
       NUR = {
       type = "github";
       owner = "nix-community";
