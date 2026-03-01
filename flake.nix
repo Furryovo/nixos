@@ -46,14 +46,14 @@
   };
 
 
-  outputs = { self, nixpkgs, sddm-greenleaf, spicetify-nix, NUR }: {
+  outputs = { self, nixpkgs, sddm-greenleaf, spicetify-nix, NUR, prismlauncher }: {
     nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
       modules = [
         { nix.settings.experimental-features = [ "nix-command" "flakes" ]; }
             NUR.modules.nixos.default
-            spicetify-nix.modules.nixos.default
-            sddm-greenleaf.modules.nixos.default        
+            sddm-greenleaf
+            prismlauncher
           ./configuration.nix
       ];
     };
