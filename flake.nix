@@ -35,7 +35,15 @@
       ref = "main";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-};
+
+    # https://github.com/PrismLauncher/PrismLauncher
+    prismlauncher = {
+      type = "github";
+      owner = "PrismLauncher";
+      repo = "PrismLauncher";
+      ref = "10.0.5";
+    };
+  };
 
 
   outputs = { self, nixpkgs, sddm-greenleaf, spicetify-nix, NUR }: {
