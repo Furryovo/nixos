@@ -1,7 +1,6 @@
-{ config, pkgs, ... }: {
+{config,  pkgs, ... }: {
 
   imports = [
-        #spicetify-nix.nixosModules.spicetify
       ./hardware-configuration.nix
     ];
 
@@ -22,7 +21,7 @@
   networking.firewall.enable = true;
   hardware.amdgpu.opencl.enable = true;
   hardware.amdgpu.initrd.enable = true;
-  #spicePkgs = inputs.spicetify-nix.legacyPackages.${pkgs.stdenv.system};
+  services.fstrim.enable = true;   
 
   # Set your time zone.
   time.timeZone = "Europe/Stockholm";
@@ -48,8 +47,8 @@
     services.xserver.enable = true;
     services.displayManager.sddm.enable = true;
     security.polkit.enable = true;
-    services.flatpak.enable = true;
-
+    services.flatpak.enable = true;  
+    services.dnsmasq.enable = true;
 
     console.keyMap = "sv-latin1";
     programs.gamemode.enable = true;
@@ -70,13 +69,13 @@
       fileSystems."/mnt/HDD_4TB" = {
           device = "/dev/disk/by-uuid/a7eaa1d6-8402-4093-91f6-a62e7567d418";
           fsType = "ext4";
-          options = [ "nofail" "x-systemd.automount" "x-systemd.idle-timeout=600" ];
+          options = [  "noatime" "nofail" "x-systemd.automount" "x-systemd.idle-timeout=600" ];
         };
 
       fileSystems."/mnt/m.2_2TB" = {
           device = "/dev/disk/by-uuid/4898eb4e-0a06-482b-9224-4736f35d8138";
           fsType = "btrfs";
-          options = [ "nofail" "x-systemd.automount" "x-systemd.idle-timeout=600" ];
+          options = [ "noatime" "nofail" "x-systemd.automount" "x-systemd.idle-timeout=600" ];
         };
 
       fileSystems."/mnt/m.2_1TB" = {
@@ -105,19 +104,10 @@
        extraPackages32 = with pkgs; [ mangohud ];
        };
 
-    #programs.spicetify-nix = {
-    # enable = false;
-     #enabledExtensions = with spicePkgs.extensions; [
-     #  adblockify
-     #  hidePodcasts
-     #  shuffle # shuffle+ (special characters are sanitized out of extension names)
-     #];
-    #};
-
         programs.steam = {
         enable = true;
-        gamescopeSession.enable = true; # Enables Gamescope for Steam Deck-like experience
-        remotePlay.openFirewall = true;
+       gamescopeSession.enable = true;
+      #  remotePlay.openFirewall = true;
         dedicatedServer.openFirewall = true;
       };
 
@@ -130,14 +120,13 @@
     #    };
     #    init.defaultBranch = "master";
     #  };
-    #};
+    #}
+   
+        programs.fish = {
+          enable = true;
+          interactiveShellInit = ''source ~/.config/fish '';
+            };   
 
-          nixpkgs.config.allowUnfreePredicate = pkg: builtins.elem  [
-             "steam"
-             "steam-original"
-             "steam-unwrapped"
-             "steam-run"
-         ];
 
          nixpkgs.config.packageOverrides = pkgs: {
          steam = pkgs.steam.override {
@@ -145,47 +134,31 @@
        };
      };
 
-
+  # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.dragonfurryowo = {
     isNormalUser = true;
     description = "DragonFurryOwO";
     extraGroups = [ "networkmanager" "wheel" ];
+    shell = pkgs.fish;
   };
 
        fonts.packages = with pkgs; [
-       pkgs.nerdfetch
-       pkgs.fira-sans
-       pkgs.fira-code
-       pkgs.roboto
-       pkgs.font-awesome
+   #    pkgs.nerdfetch
+   #    pkgs.fira-sans
+   #    pkgs.fira-code
+   #    pkgs.roboto
+   #    pkgs.font-awesome
+       pkgs.nerd-fonts.space-mono
      ];
 
+     programs.gamescope = {
+       enable = true;
+       capSysNice = false;
+    };
 
-  #   programs.nix-ld = {
-  #     enable = true;
-  #     libraries = with pkgs; [
-  #        webkitgtk_4_1
-  #        gst_all_1.gstreamer
-  #        gst_all_1.gst-plugins-base
-  #        gst_all_1.gst-plugins-good
-  #        gst_all_1.gst-plugins-bad
-  #        gst_all_1.gst-plugins-ugly
-  #        gst_all_1.gst-libav
-  #        fuse
-  #        vulkan-loader
-  #        libxkbcommon
-  #        wayland
-  #        gtk3
-  #        glib
-  #        gdk-pixbuf
-  #        openssl
-  #        libsoup_3
-  #        freetype
-  #  ];
-  #};
-
-    programs.fish.enable = true;
-    fonts.fontconfig.enable = true;
+    programs.niri.enable = true;
+    virtualisation.podman.enable = true;
+    
     programs.hyprland.enable = true;
     services.hypridle.enable = true;
     programs.hyprlock.enable = true;
@@ -196,6 +169,7 @@
     hardware.amdgpu.overdrive.enable = true;
     nixpkgs.config.allowUnfree = true;
     environment.sessionVariables.NIXOS_OZONE_WL = "1";
+  #  services.displayManager.cosmic-greeter.enable = true;
 
   environment.systemPackages = with pkgs; [
     pkgs.qpwgraph
@@ -216,7 +190,7 @@
     pkgs.waybar
     pkgs.wlogout
     pkgs.gamemode
-    pkgs.protonvpn-gui
+    pkgs.proton-vpn
     pkgs.copyq
     pkgs.steam
     pkgs.yazi
@@ -225,7 +199,7 @@
     pkgs.mako
     pkgs.hyprland
     pkgs.linux
-    pkgs.swww
+    pkgs.awww
     pkgs.heroic
     pkgs.kitty
     pkgs.libnotify
@@ -256,18 +230,16 @@
     pkgs.mangohud
     pkgs.jdk
     pkgs.btop-rocm
-    pkgs.webkitgtk_4_1
-    pkgs.gst_all_1.gst-plugins-good
-    #pkgs.spotify
-    pkgs.impala
-    pkgs.iwd
-    pkgs.thunar
-    pkgs.rPackages.edge
+    pkgs.spotify
+    pkgs.spicetify-cli
     pkgs.neovim
-    spicetify-nix
-    nur.repos.gepbird.mint-mod-manager
-    pkgs.git
-
-
+    pkgs.openlinkhub
+    nur.repos.gepbird.mint-mod-manager 
+    pkgs.winboat
+    pkgs.podman
+#    nur.repos.gepbird.hytale-launcher
+    nur.repos.weirdpkgs.ficsit-cli
+    pkgs.gamescope-wsi
+    pkgs.niri
   ];
 }
