@@ -138,9 +138,11 @@
   users.users.dragonfurryowo = {
     isNormalUser = true;
     description = "DragonFurryOwO";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "docker" ];
     shell = pkgs.fish;
   };
+
+
 
        fonts.packages = with pkgs; [
    #    pkgs.nerdfetch
@@ -157,8 +159,7 @@
     };
 
     programs.niri.enable = true;
-    virtualisation.podman.enable = true;
-    
+    virtualisation.docker.enable = true;  
     programs.hyprland.enable = true;
     services.hypridle.enable = true;
     programs.hyprlock.enable = true;
@@ -236,10 +237,11 @@
     pkgs.openlinkhub
     nur.repos.gepbird.mint-mod-manager 
     pkgs.winboat
-    pkgs.podman
+    pkgs.docker
 #    nur.repos.gepbird.hytale-launcher
     nur.repos.weirdpkgs.ficsit-cli
     pkgs.gamescope-wsi
     pkgs.niri
+    pkgs.android-tools
   ];
 }
