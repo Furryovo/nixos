@@ -1,0 +1,5 @@
+pactl load-module module-null-sink sink_name=DiscordAudio sink_properties=device.description="Discord_Audio"
+pactl load-module module-null-sink sink_name=GameAudio sink_properties=device.description="Game_Audio"
+pactl load-module module-null-sink sink_name=browser sink_properties=device.description="browser"
+pactl load-module module-null-sink sink_name=All_inputs sink_properties=device.description="All_inputs"
+pactl load-module module-null-sink sink_name=Spotify sink_properties=device.description="Spotify"

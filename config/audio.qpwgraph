@@ -1,0 +1,722 @@
+<!DOCTYPE patchbay>
+<patchbay name="audio" version="1.0.2">
+ <items>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="microsoft.seaofthieves-2" port="microsoft.seaofthieves:output_FL"/>
+   <input node="Game_Audio" port="Game_Audio:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="USB Audio Front Headphones [Monitor]" port="USB Audio #1:monitor_FL"/>
+   <input node="USB Audio Front Headphones" port="USB Audio #1:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Spotify" port="Spotify:monitor_FL"/>
+   <input node="All_inputs" port="All_inputs:playback_FL"/>
+  </item>
+  <item node-type="alsa" port-type="alsa-midi">
+   <output node="14:Midi Through" port="0:Midi Through Port-0"/>
+   <input node="14:Midi Through" port="0:Midi Through Port-0"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="BlackOps3.exe" port="BlackOps3.exe:output_FR"/>
+   <input node="Game_Audio" port="Game_Audio:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Chromium-3" port="Chromium:output_FR"/>
+   <input node="Discord_Audio" port="Discord_Audio:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Firefox-1" port="Firefox:output_FR"/>
+   <input node="browser" port="browser:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="FlowFactoryBeta.exe" port="FlowFactoryBeta.exe:output_FL"/>
+   <input node="Game_Audio" port="Game_Audio:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="BlackOps3.exe-1" port="BlackOps3.exe:output_FR"/>
+   <input node="Game_Audio" port="Game_Audio:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Chromium-5" port="Chromium:output_FL"/>
+   <input node="Discord_Audio" port="Discord_Audio:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="hl_linux" port="hl_linux:output_FR"/>
+   <input node="Game_Audio" port="Game_Audio:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="CORSAIR HS80 MAX WIRELESS Gaming Receiver Mono" port="CORSAIR HS80 MAX WIRELESS Gamin:capture_MONO"/>
+   <input node="Call of Duty(R): Black Ops II" port="Call of Duty(R): Black Ops II:input_MONO"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="FactoryGameSteam" port="FactoryGameSteam:output_FL"/>
+   <input node="Game_Audio" port="Game_Audio:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Chromium" port="Chromium:output_FR"/>
+   <input node="Discord_Audio" port="Discord_Audio:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="USB Audio Speakers [Monitor]" port="USB Audio:monitor_FL"/>
+   <input node="USB Audio Speakers" port="USB Audio:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Floorp-1" port="Floorp:output_FR"/>
+   <input node="browser" port="browser:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="microsoft.seaofthieves-1" port="microsoft.seaofthieves:output_FL"/>
+   <input node="Game_Audio" port="Game_Audio:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Firefox-5" port="Firefox:output_FL"/>
+   <input node="browser" port="browser:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Firefox-2" port="Firefox:output_FL"/>
+   <input node="browser" port="browser:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="USB Audio S/PDIF Output [Monitor]" port="USB Audio #3:monitor_FL"/>
+   <input node="USB Audio S/PDIF Output" port="USB Audio #3:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Half-Life 1" port="Half-Life 1:output_FL"/>
+   <input node="Game_Audio" port="Game_Audio:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Navi 48 HDMI/DP Audio Controller Digital Stereo (HDMI) [Monitor]" port="Q27G3XMN:monitor_FL"/>
+   <input node="Navi 48 HDMI/DP Audio Controller Digital Stereo (HDMI)" port="Q27G3XMN:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="PipeWire ALSA [wine64-preloader]/ALSA Playback [wine64-preloader]" port="ALSA Playback [wine64-preloader]:output_FR"/>
+   <input node="Game_Audio" port="Game_Audio:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Factorio 2.0.76" port="Factorio 2.0.76:output_FR"/>
+   <input node="Game_Audio" port="Game_Audio:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Firefox" port="Firefox:output_FL"/>
+   <input node="browser" port="browser:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="FMOD Ex App" port="FMOD Ex App:output_FR"/>
+   <input node="Game_Audio" port="Game_Audio:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Call of Duty(R): Black Ops II-1" port="Call of Duty(R): Black Ops II:output_FR"/>
+   <input node="Game_Audio" port="Game_Audio:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Chromium-7" port="Chromium:output_FL"/>
+   <input node="Game_Audio" port="Game_Audio:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Firefox-6" port="Firefox:output_FL"/>
+   <input node="browser" port="browser:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Floorp" port="Floorp:output_FR"/>
+   <input node="browser" port="browser:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="plutonium-bootstrapper-win32.exe" port="plutonium-bootstrapper-win32.exe:output_FR"/>
+   <input node="Game_Audio" port="Game_Audio:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="plutonium-bootstrapper-win32.exe" port="plutonium-bootstrapper-win32.exe:output_FL"/>
+   <input node="Game_Audio" port="Game_Audio:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Firefox-1" port="Firefox:output_FL"/>
+   <input node="browser" port="browser:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Firefox-4" port="Firefox:output_FR"/>
+   <input node="browser" port="browser:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="ALSA plug-in [wine64-preloader]" port="ALSA plug-in [wine64-preloader]:output_FR"/>
+   <input node="Game_Audio" port="Game_Audio:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Far Cry Primal" port="Far Cry Primal:output_FR"/>
+   <input node="Game_Audio" port="Game_Audio:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Fallout 4-1" port="Fallout 4:output_FL"/>
+   <input node="Game_Audio" port="Game_Audio:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Floorp-1" port="Floorp:output_FL"/>
+   <input node="browser" port="browser:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Rogue Core-3" port="Rogue Core:output_FR"/>
+   <input node="Game_Audio" port="Game_Audio:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Shrapnel" port="Shrapnel:output_FL"/>
+   <input node="Game_Audio" port="Game_Audio:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Floorp-3" port="Floorp:output_FL"/>
+   <input node="browser" port="browser:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Shrapnel-1" port="Shrapnel:output_FL"/>
+   <input node="Game_Audio" port="Game_Audio:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="spotify" port="spotify:output_FL"/>
+   <input node="Spotify" port="Spotify:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="java" port="java:output_FL"/>
+   <input node="Game_Audio" port="Game_Audio:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Rogue Core" port="Rogue Core:output_FR"/>
+   <input node="Game_Audio" port="Game_Audio:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Far Cry Primal" port="Far Cry Primal:output_FL"/>
+   <input node="Game_Audio" port="Game_Audio:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Rogue Core-1" port="Rogue Core:output_FR"/>
+   <input node="Game_Audio" port="Game_Audio:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Deep Rock Galactic" port="Deep Rock Galactic:output_FL"/>
+   <input node="Game_Audio" port="Game_Audio:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Floorp-2" port="Floorp:output_FL"/>
+   <input node="browser" port="browser:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="ALSA plug-in [wine64-preloader]-1" port="ALSA plug-in [wine64-preloader]:output_FL"/>
+   <input node="Game_Audio" port="Game_Audio:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Firefox-3" port="Firefox:output_FL"/>
+   <input node="browser" port="browser:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Game_Audio" port="Game_Audio:monitor_FR"/>
+   <input node="vencord-screen-share" port="vencord-screen-share:input_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Metro Exodus" port="Metro Exodus:output_FR"/>
+   <input node="Game_Audio" port="Game_Audio:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Rogue Core" port="Rogue Core:output_FL"/>
+   <input node="Game_Audio" port="Game_Audio:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="microsoft.seaofthieves-2" port="microsoft.seaofthieves:output_FR"/>
+   <input node="Game_Audio" port="Game_Audio:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Call of Duty(R): World at War Game-1" port="Call of Duty(R): World at War Game:output_FL"/>
+   <input node="Game_Audio" port="Game_Audio:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="LightyearFrontier" port="LightyearFrontier:output_FL"/>
+   <input node="Game_Audio" port="Game_Audio:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Chromium" port="Chromium:output_FL"/>
+   <input node="Discord_Audio" port="Discord_Audio:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="AlchemyFactory" port="AlchemyFactory:output_FL"/>
+   <input node="Game_Audio" port="Game_Audio:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="TrackmaniaUplay" port="TrackmaniaUplay:output_FL"/>
+   <input node="Game_Audio" port="Game_Audio:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="USB Audio Speakers [Monitor]" port="USB Audio:monitor_FC"/>
+   <input node="USB Audio Speakers" port="USB Audio:playback_FC"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="plutonium-bootstrapper-win32.exe-2" port="plutonium-bootstrapper-win32.exe:output_FL"/>
+   <input node="Game_Audio" port="Game_Audio:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="All_inputs" port="All_inputs:monitor_FR"/>
+   <input node="CORSAIR HS80 MAX WIRELESS Gaming Receiver Analog Stereo" port="CORSAIR HS80 MAX WIRELESS Gamin:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="outhold_windows_demo.exe" port="outhold_windows_demo.exe:output_FR"/>
+   <input node="Game_Audio" port="Game_Audio:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="CozyGameRestoration.exe" port="CozyGameRestoration.exe:output_FR"/>
+   <input node="Game_Audio" port="Game_Audio:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="ALSA plug-in [wine64-preloader]" port="ALSA plug-in [wine64-preloader]:output_FL"/>
+   <input node="Game_Audio" port="Game_Audio:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Call of Duty(R): Black Ops II" port="Call of Duty(R): Black Ops II:output_FL"/>
+   <input node="Game_Audio" port="Game_Audio:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="microsoft.seaofthieves" port="microsoft.seaofthieves:output_FR"/>
+   <input node="Game_Audio" port="Game_Audio:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Chromium-2" port="Chromium:output_FL"/>
+   <input node="Discord_Audio" port="Discord_Audio:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="browser" port="browser:monitor_FR"/>
+   <input node="All_inputs" port="All_inputs:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="LightyearFrontier" port="LightyearFrontier:output_FR"/>
+   <input node="Game_Audio" port="Game_Audio:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Sensory Overload Playtest" port="Sensory Overload Playtest:output_FR"/>
+   <input node="Game_Audio" port="Game_Audio:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="spotify" port="spotify:output_FR"/>
+   <input node="Spotify" port="Spotify:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Scrap Mechanic" port="Scrap Mechanic:output_FL"/>
+   <input node="Game_Audio" port="Game_Audio:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Rogue Core-2" port="Rogue Core:output_FR"/>
+   <input node="Game_Audio" port="Game_Audio:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-video">
+   <output node="niri-1" port="niri:output_1"/>
+   <input node="electron-1" port="electron:input_1"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Game_Audio" port="Game_Audio:monitor_FL"/>
+   <input node="All_inputs" port="All_inputs:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Chromium-3" port="Chromium:output_FL"/>
+   <input node="Discord_Audio" port="Discord_Audio:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Rogue Core-1" port="Rogue Core:output_FL"/>
+   <input node="Game_Audio" port="Game_Audio:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Firefox-3" port="Firefox:output_FR"/>
+   <input node="browser" port="browser:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Game_Audio" port="Game_Audio:monitor_FL"/>
+   <input node="vencord-screen-share" port="vencord-screen-share:input_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Scrap Mechanic" port="Scrap Mechanic:output_FR"/>
+   <input node="Game_Audio" port="Game_Audio:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="THE FINALS" port="THE FINALS:output_FL"/>
+   <input node="Game_Audio" port="Game_Audio:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Firefox-6" port="Firefox:output_FR"/>
+   <input node="browser" port="browser:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Floorp" port="Floorp:output_FL"/>
+   <input node="browser" port="browser:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="USB Audio Line Input" port="USB Audio #1:capture_FR"/>
+   <input node="USB Audio Front Headphones" port="USB Audio #1:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="THE FINALS" port="THE FINALS:output_FR"/>
+   <input node="Game_Audio" port="Game_Audio:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="microsoft.seaofthieves-3" port="microsoft.seaofthieves:output_FL"/>
+   <input node="Game_Audio" port="Game_Audio:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="CORSAIR HS80 MAX WIRELESS Gaming Receiver Mono" port="CORSAIR HS80 MAX WIRELESS Gamin:capture_MONO"/>
+   <input node="Chromium input" port="Chromium input:input_MONO"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="FMOD Ex App" port="FMOD Ex App:output_FL"/>
+   <input node="Game_Audio" port="Game_Audio:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Main Sequence" port="Main Sequence:output_FL"/>
+   <input node="Game_Audio" port="Game_Audio:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="LightyearFrontier-1" port="LightyearFrontier:output_FL"/>
+   <input node="Game_Audio" port="Game_Audio:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="CozyGameRestoration.exe" port="CozyGameRestoration.exe:output_FL"/>
+   <input node="Game_Audio" port="Game_Audio:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="THE FINALS-1" port="THE FINALS:output_FR"/>
+   <input node="Game_Audio" port="Game_Audio:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Deep Rock Galactic" port="Deep Rock Galactic:output_FR"/>
+   <input node="Game_Audio" port="Game_Audio:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Call of Duty(R): World at War Game" port="Call of Duty(R): World at War Game:output_FL"/>
+   <input node="Game_Audio" port="Game_Audio:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="USB Audio Speakers [Monitor]" port="USB Audio:monitor_LFE"/>
+   <input node="USB Audio Speakers" port="USB Audio:playback_LFE"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Shrapnel-1" port="Shrapnel:output_FR"/>
+   <input node="Game_Audio" port="Game_Audio:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Rogue Core-2" port="Rogue Core:output_FL"/>
+   <input node="Game_Audio" port="Game_Audio:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Call of Duty(R): World at War Game-1" port="Call of Duty(R): World at War Game:output_FR"/>
+   <input node="Game_Audio" port="Game_Audio:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="LightyearFrontier-1" port="LightyearFrontier:output_FR"/>
+   <input node="Game_Audio" port="Game_Audio:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="DSPGAME.exe" port="DSPGAME.exe:output_FL"/>
+   <input node="Game_Audio" port="Game_Audio:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="FlowFactoryBeta.exe" port="FlowFactoryBeta.exe:output_FR"/>
+   <input node="Game_Audio" port="Game_Audio:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Call of Duty(R): Black Ops II" port="Call of Duty(R): Black Ops II:output_FR"/>
+   <input node="Game_Audio" port="Game_Audio:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="AlchemyFactory" port="AlchemyFactory:output_FR"/>
+   <input node="Game_Audio" port="Game_Audio:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="deskjob" port="deskjob:output_FL"/>
+   <input node="Game_Audio" port="Game_Audio:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Call of Duty(R): World at War Game" port="Call of Duty(R): World at War Game:output_FR"/>
+   <input node="Game_Audio" port="Game_Audio:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="USB Audio S/PDIF Output [Monitor]" port="USB Audio #3:monitor_FR"/>
+   <input node="USB Audio S/PDIF Output" port="USB Audio #3:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Navi 48 HDMI/DP Audio Controller Digital Stereo (HDMI) [Monitor]" port="Q27G3XMN:monitor_FR"/>
+   <input node="Navi 48 HDMI/DP Audio Controller Digital Stereo (HDMI)" port="Q27G3XMN:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Sensory Overload Playtest" port="Sensory Overload Playtest:output_FL"/>
+   <input node="Game_Audio" port="Game_Audio:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="browser" port="browser:monitor_FL"/>
+   <input node="All_inputs" port="All_inputs:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="USB Audio Speakers [Monitor]" port="USB Audio:monitor_RR"/>
+   <input node="USB Audio Speakers" port="USB Audio:playback_RR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Chromium-4" port="Chromium:output_FR"/>
+   <input node="Discord_Audio" port="Discord_Audio:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Floorp-2" port="Floorp:output_FR"/>
+   <input node="browser" port="browser:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Floorp-4" port="Floorp:output_FR"/>
+   <input node="browser" port="browser:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="plutonium-bootstrapper-win32.exe-1" port="plutonium-bootstrapper-win32.exe:output_FR"/>
+   <input node="Game_Audio" port="Game_Audio:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="DSPGAME.exe" port="DSPGAME.exe:output_FR"/>
+   <input node="Game_Audio" port="Game_Audio:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Fallout 4-1" port="Fallout 4:output_FR"/>
+   <input node="Game_Audio" port="Game_Audio:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Deep Rock Galactic-1" port="Deep Rock Galactic:output_FR"/>
+   <input node="Game_Audio" port="Game_Audio:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Discord_Audio" port="Discord_Audio:monitor_FL"/>
+   <input node="All_inputs" port="All_inputs:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="FactoryGameSteam" port="FactoryGameSteam:output_FR"/>
+   <input node="Game_Audio" port="Game_Audio:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Spotify" port="Spotify:monitor_FR"/>
+   <input node="All_inputs" port="All_inputs:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="plutonium-bootstrapper-win32.exe-2" port="plutonium-bootstrapper-win32.exe:output_FR"/>
+   <input node="Game_Audio" port="Game_Audio:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="ALSA plug-in [wine64-preloader]-1" port="ALSA plug-in [wine64-preloader]:output_FR"/>
+   <input node="Game_Audio" port="Game_Audio:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="BlackOps3.exe-1" port="BlackOps3.exe:output_FL"/>
+   <input node="Game_Audio" port="Game_Audio:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Deep Rock Galactic-1" port="Deep Rock Galactic:output_FL"/>
+   <input node="Game_Audio" port="Game_Audio:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Chromium-4" port="Chromium:output_FL"/>
+   <input node="Discord_Audio" port="Discord_Audio:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="microsoft.seaofthieves-3" port="microsoft.seaofthieves:output_FR"/>
+   <input node="Game_Audio" port="Game_Audio:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Factorio 2.0.76" port="Factorio 2.0.76:output_FL"/>
+   <input node="Game_Audio" port="Game_Audio:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="java" port="java:output_FR"/>
+   <input node="Game_Audio" port="Game_Audio:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="USB Audio Speakers [Monitor]" port="USB Audio:monitor_RL"/>
+   <input node="USB Audio Speakers" port="USB Audio:playback_RL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="outhold_windows_demo.exe" port="outhold_windows_demo.exe:output_FL"/>
+   <input node="Game_Audio" port="Game_Audio:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="USB Audio Microphone" port="USB Audio #2:capture_FR"/>
+   <input node="USB Audio S/PDIF Output" port="USB Audio #3:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="USB Audio Speakers [Monitor]" port="USB Audio:monitor_FR"/>
+   <input node="USB Audio Speakers" port="USB Audio:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="USB Audio Microphone" port="USB Audio #2:capture_FL"/>
+   <input node="USB Audio S/PDIF Output" port="USB Audio #3:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Call of Duty(R): World at War Game-2" port="Call of Duty(R): World at War Game:output_FR"/>
+   <input node="Game_Audio" port="Game_Audio:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Rogue Core-3" port="Rogue Core:output_FL"/>
+   <input node="Game_Audio" port="Game_Audio:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Call of Duty(R): Black Ops II-1" port="Call of Duty(R): Black Ops II:output_FL"/>
+   <input node="Game_Audio" port="Game_Audio:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Game_Audio" port="Game_Audio:monitor_FR"/>
+   <input node="All_inputs" port="All_inputs:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Fallout 4" port="Fallout 4:output_FL"/>
+   <input node="Game_Audio" port="Game_Audio:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Firefox-2" port="Firefox:output_FR"/>
+   <input node="browser" port="browser:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="PipeWire ALSA [wine64-preloader]/ALSA Playback [wine64-preloader]" port="ALSA Playback [wine64-preloader]:output_FL"/>
+   <input node="Game_Audio" port="Game_Audio:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="FactoryGameSteam-1" port="FactoryGameSteam:output_FR"/>
+   <input node="Game_Audio" port="Game_Audio:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Main Sequence" port="Main Sequence:output_FR"/>
+   <input node="Game_Audio" port="Game_Audio:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="hl_linux-1" port="hl_linux:output_FL"/>
+   <input node="Game_Audio" port="Game_Audio:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-midi">
+   <output node="Midi-Bridge" port="Midi Through:Midi Through Port-0"/>
+   <input node="Midi-Bridge" port="Midi Through:Midi Through Port-0"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Discord_Audio" port="Discord_Audio:monitor_FR"/>
+   <input node="All_inputs" port="All_inputs:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="plutonium-bootstrapper-win32.exe-1" port="plutonium-bootstrapper-win32.exe:output_FL"/>
+   <input node="Game_Audio" port="Game_Audio:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="deskjob" port="deskjob:output_FR"/>
+   <input node="Game_Audio" port="Game_Audio:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="microsoft.seaofthieves" port="microsoft.seaofthieves:output_FL"/>
+   <input node="Game_Audio" port="Game_Audio:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="USB Audio Front Headphones [Monitor]" port="USB Audio #1:monitor_FR"/>
+   <input node="USB Audio Front Headphones" port="USB Audio #1:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Firefox" port="Firefox:output_FR"/>
+   <input node="browser" port="browser:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Chromium-1" port="Chromium:output_FR"/>
+   <input node="Discord_Audio" port="Discord_Audio:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Shrapnel" port="Shrapnel:output_FR"/>
+   <input node="Game_Audio" port="Game_Audio:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-midi">
+   <output node="BLE MIDI 1" port="out"/>
+   <input node="BLE MIDI 1" port="in"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Floorp-3" port="Floorp:output_FR"/>
+   <input node="browser" port="browser:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="USB Audio Speakers [Monitor]" port="USB Audio:monitor_SL"/>
+   <input node="USB Audio Speakers" port="USB Audio:playback_SL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="BlackOps3.exe" port="BlackOps3.exe:output_FL"/>
+   <input node="Game_Audio" port="Game_Audio:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Firefox-5" port="Firefox:output_FR"/>
+   <input node="browser" port="browser:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Chromium-1" port="Chromium:output_FL"/>
+   <input node="Discord_Audio" port="Discord_Audio:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="All_inputs" port="All_inputs:monitor_FL"/>
+   <input node="CORSAIR HS80 MAX WIRELESS Gaming Receiver Analog Stereo" port="CORSAIR HS80 MAX WIRELESS Gamin:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Chromium-5" port="Chromium:output_FR"/>
+   <input node="Discord_Audio" port="Discord_Audio:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Firefox-4" port="Firefox:output_FL"/>
+   <input node="browser" port="browser:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="hl_linux" port="hl_linux:output_FL"/>
+   <input node="Game_Audio" port="Game_Audio:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Fallout 4" port="Fallout 4:output_FR"/>
+   <input node="Game_Audio" port="Game_Audio:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="USB Audio Line Input" port="USB Audio #1:capture_FL"/>
+   <input node="USB Audio Front Headphones" port="USB Audio #1:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Chromium-7" port="Chromium:output_FR"/>
+   <input node="Game_Audio" port="Game_Audio:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="TrackmaniaUplay" port="TrackmaniaUplay:output_FR"/>
+   <input node="Game_Audio" port="Game_Audio:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Call of Duty(R): World at War Game-2" port="Call of Duty(R): World at War Game:output_FL"/>
+   <input node="Game_Audio" port="Game_Audio:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Metro Exodus" port="Metro Exodus:output_FL"/>
+   <input node="Game_Audio" port="Game_Audio:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Half-Life 1" port="Half-Life 1:output_FR"/>
+   <input node="Game_Audio" port="Game_Audio:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="hl_linux-1" port="hl_linux:output_FR"/>
+   <input node="Game_Audio" port="Game_Audio:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="microsoft.seaofthieves-1" port="microsoft.seaofthieves:output_FR"/>
+   <input node="Game_Audio" port="Game_Audio:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="FactoryGameSteam-1" port="FactoryGameSteam:output_FL"/>
+   <input node="Game_Audio" port="Game_Audio:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="THE FINALS-1" port="THE FINALS:output_FL"/>
+   <input node="Game_Audio" port="Game_Audio:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="USB Audio Speakers [Monitor]" port="USB Audio:monitor_SR"/>
+   <input node="USB Audio Speakers" port="USB Audio:playback_SR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="CORSAIR HS80 MAX WIRELESS Gaming Receiver Mono" port="CORSAIR HS80 MAX WIRELESS Gamin:capture_MONO"/>
+   <input node="Chromium input-1" port="Chromium input:input_MONO"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Floorp-4" port="Floorp:output_FR"/>
+   <input node="browser" port="browser:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Chromium-2" port="Chromium:output_FR"/>
+   <input node="Discord_Audio" port="Discord_Audio:playback_FR"/>
+  </item>
+ </items>
+</patchbay>
+
